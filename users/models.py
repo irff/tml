@@ -1,7 +1,8 @@
 from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
 
-from books.models import *
+from django.db import models
+from utils.models import *
 
 class UserManager(BaseUserManager):
     use_in_migrations = True
